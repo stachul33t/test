@@ -5,7 +5,7 @@ let data = {
     imie: "Stanisław",
     nazwisko: "Krzyworzeka",
     klasa: "3i1",
-    grupa: "gr2"
+    grupa: "2"
 }
 app.get("/", function(req, res) {
     res.send("<h1>Moja aplikacja na heroku - zmiana pliku</h1><br><h3>Stanisław Krzyworzeka grII</h3>")
