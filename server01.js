@@ -8,10 +8,10 @@ let data = {
     grupa: "gr2"
 }
 app.get("/", function(req, res) {
-    res.send("<a href='https://stanislawkrzyworzeka3i1gr2.herokuapp.com/data'>/data</a>")
+    res.send("<h1>Moja aplikacja na heroku - zmiana pliku</h1><br><h3>Stanisław Krzyworzeka grII</h3>")
 });
 app.get("/data", function(req, res) {
-    res.send("<h1>" + data.imie + ", " + data.nazwisko + ", " + data.klasa + ", " + data.grupa + "</h1>")
+    res.send(data)
 });
 app.listen(PORT, function() {
     console.log("start serwera na porcie terefere " + PORT)
